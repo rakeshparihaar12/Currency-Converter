@@ -58,7 +58,8 @@ const updatevalue = async() => {
     const rate = data[from][to];
     const finrate = rate * amtValue
     let finalamount = amount * rate
-    msg.textContent = `${amtValue} ${from}= ${finrate} ${to}`
+    msg.textContent =
+`${amtValue} ${from.toUpperCase()} = ${finrate.toFixed(2)} ${to.toUpperCase()}`;
 }
 exchange.addEventListener("click", (evt) => {
     evt.preventDefault();
