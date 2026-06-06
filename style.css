@@ -87,3 +87,21 @@ form button {
   margin-top: 5px;
   cursor: pointer;
 }
+
+.convert-btn,
+.Exchange {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.convert-btn:hover,
+.Exchange:hover {
+    transform: translateY(-3px) scale(1.02);
+    filter: brightness(1.1);
+    box-shadow: 0 10px 25px rgba(128, 0, 128, 0.3);
+}
+
+.convert-btn:active,
+.Exchange:active {
+    transform: scale(0.97);
+}
